@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="event_types">
+        <item>Birthday</item>
+        <item>Anniversary</item>
+        <item>Meeting</item>
+        <item>Appointment</item>
+        <item>Write an email</item>
+        <item>Write an sms</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="repeat_options">
+        <item>@string/does_not_repeat</item>
+        <item>@string/every_day</item>
+        <item>@string/every_week</item>
+        <item>@string/every_month</item>
+        <item>@string/every_year</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,78 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/event_item_name"
+        android:text="Event Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/event_item_description"
+        android:layout_width="match_parent"
+        android:text="Event Description"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/event_item_date"
+        android:text="Event Date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/event_item_time"
+        android:text="Event Time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/event_item_type"
+        android:text="Event Type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/event_item_rep"
+        android:text="Event Rep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="14sp"/>
+
+    <ToggleButton
+        android:id="@+id/myCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="Aktywny"
+        android:textOff="Nieaktywny"
+        android:background="@drawable/toggle_button_selector"
+        android:checked="false" />
+
+
+    <Button
+        android:id="@+id/edit_event_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="edit Event" />
+    <Button
+        android:id="@+id/remove_event_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="remove Event" />
+
+
+</LinearLayout>

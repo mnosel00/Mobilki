@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add New Event"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/event_name_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:minWidth="200dp"
+        android:minHeight="48dp"
+        android:hint="Event name" />
+
+
+
+    <EditText
+        android:id="@+id/event_description_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Event Description"
+        android:minWidth="200dp"
+        android:minHeight="48dp"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/event_date_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="200dp"
+        android:minHeight="48dp"
+        android:hint="Event Date"
+        android:inputType="text"
+        android:focusable="false" />
+    <EditText
+        android:id="@+id/event_time_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="200dp"
+        android:minHeight="48dp"
+        android:focusable="false"
+        android:hint="Time" />
+
+    <Spinner
+        android:id="@+id/event_type_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="200dp"
+        android:minHeight="48dp"
+        android:entries="@array/event_types"
+        android:prompt="@string/select_event_type" />
+
+    <Spinner
+        android:id="@+id/event_type_spinner_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="200dp"
+        android:minHeight="48dp"
+        android:entries="@array/repeat_options"
+        android:prompt="@string/select_repeat_options" />
+
+    <Button
+        android:id="@+id/add_event_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Event" />
+    <Button
+        android:id="@+id/goback_event_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go To Event List" />
+
+</LinearLayout>

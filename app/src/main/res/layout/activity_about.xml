@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/authors_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Authors: "/>
+
+    <EditText
+        android:text="Mateusz Nosel oraz Tomasz Trojański"
+        android:minHeight="48dp"
+        android:id="@+id/authors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:labelFor="@+id/authors_label"/>
+
+    <TextView
+        android:id="@+id/how_it_works_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dzialanie_aplikacji"/>
+
+    <EditText
+        android:text="@string/co_tutaj_tomeczku_musisz_doda_bo_bida"
+        android:minHeight="48dp"
+        android:id="@+id/how_it_works"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/how_it_works_label"/>
+</LinearLayout>

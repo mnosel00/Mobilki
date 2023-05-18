@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ReminderApp</string>
+    <string name="open">Open Navigation</string>
+    <string name="close">Close Navigation</string>
+    <string name="select_event_type">Select event type...</string>
+    <string name="select_repeat_options"> Select repeat time...</string>
+
+    <string name="does_not_repeat">Does not repeat</string>
+    <string name="every_day">Every day</string>
+    <string name="every_week">Every week</string>
+    <string name="every_month">Every month</string>
+    <string name="every_year">Every year</string>
+    <string name="co_tutaj_tomeczku_musisz_doda_bo_bida">Coś tutaj Tomeczku musisz dodać bo bida</string>
+    <string name="dzialanie_aplikacji">Działanie aplikacji:</string>
+
+
+</resources>
