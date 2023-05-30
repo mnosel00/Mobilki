@@ -67,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
     List<Event> passedEvents = new ArrayList<>();
     private Timer alarmTimer;
     private Handler handler = new Handler();
+    private String logMessage;
 
 
     @Override
@@ -221,8 +222,12 @@ public class MainActivity extends AppCompatActivity {
             return false;
         });
     }
+    public String getLogMessage() {
+        return logMessage;
+    }
 
-    private void setAlarm(Date alarmDateTime, String rep, String name, String description,String type,boolean isOn) {
+
+    void setAlarm(Date alarmDateTime, String rep, String name, String description, String type, boolean isOn) {
         // Oblicz opóźnienie w milisekundach do czasu alarmu
         long delayInMillis = alarmDateTime.getTime() - System.currentTimeMillis();
 
@@ -300,7 +305,9 @@ public class MainActivity extends AppCompatActivity {
         }, delayInMillis);
 
         DateFormat alarmDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        Log.d("Alarm", "Budzik został ustawiony" + alarmDateFormat.format(alarmDateTime));
+        logMessage = "Budzik został ustawiony" + alarmDateFormat.format(alarmDateTime);
+        Log.d("Alarm", logMessage);
+        //Log.d("Alarm", "Budzik został ustawiony" + alarmDateFormat.format(alarmDateTime));
     }
 
 

@@ -186,7 +186,7 @@ public class EventsActivity extends AppCompatActivity implements AdapterView.OnI
 
     }
 
-    private void clearFields() {
+    void clearFields() {
         mEventNameEditText.setText("");
         mEventDescriptionEditText.setText("");
         mEventDateEditText.setText("");
